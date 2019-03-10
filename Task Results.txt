@@ -1,0 +1,27 @@
+In the first job description for the Financial Controller:
+financial shows up 9 times.
+subject matter expert shows up 2 times.
+j-sox shows up 2 times.
+compliance shows up 3 times.
+consolidation shows up 3 times.
+deadlines shows up 2 times.
+expert shows up 2 times.
+audit shows up 4 times.
+analytical shows up 2 times.
+excel shows up 1 times.
+calculate shows up 0 times.
+accurate shows up 0 times.
+
+In the second job description for the Financial Accountant
+financial shows up 4 times
+accurate shows up 4 times
+analytical shows up 1 times
+deadlines shows up 1 times
+subject matter expert shows up 0 times
+calculate shows up 0 times
+expert shows up 0 times
+excel shows up 0 times
+consolidation shows up 0 times
+compliance shows up 0 times
+j-sox shows up 0 times
+audit shows up 0 times
