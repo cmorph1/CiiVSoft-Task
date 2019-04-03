@@ -1,6 +1,7 @@
 import http.client
 import base64
 import codecs
+import json
 
 
 def connect_and_get(domain: str, path: str):
@@ -19,10 +20,9 @@ def write_job_description(name: str, utf_file):
 
 
 if __name__ == '__main__':
-    data = str(connect_and_get('ciivsoft.getsandbox.com', '/jobs'))
-    strings = data.split('"')
-    jd1_code = strings[7]
-    jd2_code = strings[9]
-    jd1, jd2 = base64.b64decode(jd1_code).decode('utf-8'), base64.b64decode(jd2_code).decode('utf-8')
-    write_job_description('job description 1.txt', jd1)
-    write_job_description('job description 2.txt', jd2)
+    data = json.loads(connect_and_get('ciivsoft.getsandbox.com', '/jobs'))
+    file_number = 1
+    for job_descriptions in data['result']:
+        write_job_description('job description {}.txt'.format(file_number),
+                              (base64.b64decode(job_descriptions).decode('utf-8')))
+        file_number += 1
